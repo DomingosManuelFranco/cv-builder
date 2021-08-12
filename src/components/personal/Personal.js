@@ -37,7 +37,7 @@ class Personal extends Component {
 
     
     render() {
-        const { fullName, contact } = this.state;
+        const { fullName } = this.state;
 
         return (
             <>
@@ -49,39 +49,8 @@ class Personal extends Component {
                     variant="outlined"
                     fullWidth
                 />  
-                  <TextField 
-                    label="contact"
-                    defaultValue={contact}
-                    variant="outlined"
-                    fullWidth
-                /> 
-                <TextField 
-                    label="email"
-                    defaultValue={this.state.email}
-                    variant="outlined"
-                    fullWidth
-                /> 
-                <TextField 
-                    label="address"
-                    defaultValue={this.state.address}
-                    variant="outlined"
-                    fullWidth
-                />  
-                <TextField 
-                    label="Imagration Status"
-                    defaultValue={this.state.imgrationStatus}
-                    variant="outlined"
-                    fullWidth
-                /> 
-                <TextField 
-                    label="Imagration Status"
-                    defaultValue={this.state.imgrationStatus}
-                    variant="outlined"
-                    fullWidth
-                    multiline
-                    rows={3}
-                /> 
-               <Button color="primary">Submit</Button>
+                  
+               <Button type="submit" variant="contained" color="primary">Submit</Button>
               </form>  
             </>
         )
