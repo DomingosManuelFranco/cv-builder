@@ -1,18 +1,21 @@
 import { Grid } from "@material-ui/core";
+import Personal from './components/personal/Personal';
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Grid container direction="row" justifyContent="space-between" spacing={3}>
-        <Grid item md={6} sm={6} xs={6} >
+    <>
+      <Grid container justifyContent="space-between" spacing={3}>
+        <Grid item md={6} >
           <h1>Hello World!</h1>
+          <Personal />
         </Grid>
-        <Grid item md={6} sm={6} xs={6}>
+        <Grid item md={6} >
         <h1>Hello World!</h1>
         </Grid>
       </Grid>
-    </div>
+    </>
   );
 }
 
