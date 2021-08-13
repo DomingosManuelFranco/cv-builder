@@ -41,7 +41,8 @@ class Personal extends Component {
 
         return (
             <>
-              <form onSubmit={this.onSubmitForm}> 
+              <form onSubmit={this.onSubmitForm}>
+              <h1>Hello {this.state.fullName} </h1> 
                 <TextField
                     onChange={this.handleChange} 
                     label="Full Name"
